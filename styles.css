@@ -1,0 +1,148 @@
+@font-face {
+    font-family: '3dumbregular';
+    src: url('./fonts/3dumb-webfont.woff2') format('woff2'),
+         url('./fonts/3dumb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    display: flex;
+    font-family: Helvetica;
+    box-sizing: border-box;
+    background-color: rgba(205, 238, 255, 0.105)
+}
+body, ul, header{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+#sidebar{
+    background-image: url(./images/discord-flutter.png);
+    background-size:cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 20px 0px 300px rgb(190, 239, 249);
+}
+#logo-container{
+    display: flex;
+    background-color: rgba(217, 240, 251, 0.699) ;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    position: relative;
+    top: 250px;
+    font-size: 1.7em;
+    box-shadow: 0px 25px 10px -8px rgba(50, 46, 101, 0.382);
+}
+#logo-container > img{
+    height: 250px;
+}
+#logo-container > h1{
+    text-align: center;
+    font-family: "3dumbregular";
+    line-height: 1.2;
+    color: rgb(250, 116, 194);
+    padding-top: 50px;
+    padding-right: 10px;
+    margin-bottom: 0;
+}
+#credit{
+    text-align: center;
+    font-size: small;
+}
+a{
+ color: rgba(74, 193, 252, 0.624);
+ text-decoration: none;
+ font-weight: bold;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+#introduction{
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: left;
+    padding: 0 80px;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+    padding: 20px 30px;
+}
+fieldset{
+    position: relative;
+    padding: 80px 0px 50px 50px;
+    box-sizing: content-box;
+    border: 3px ;
+    border-radius: 10px;
+    background-color: white;
+}
+legend {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    font-size: 1.3em;
+    font-weight:700
+}
+label{
+    font-size: 0.8rem;
+}
+form + div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    color: rgb(36, 36, 36);
+    padding-bottom: 0px;
+}
+input{
+    border: 1.3px solid black;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+button{
+    padding: 7px;
+    border-radius: 7px;
+    border: 1.8px solid rgb(0, 0, 0);;
+    background-color: white;
+    font-size: 1.1em;
+}
+button:hover{
+    background-color: rgb(251, 170, 218);
+    color:white;
+}
+button:active{
+    background-color: rgb(246, 157, 209);
+}
+p > a{
+    color: rgb(236, 138, 197);
+}
+button + p{
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 3px;;
+}
