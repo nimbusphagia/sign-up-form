@@ -13,7 +13,7 @@
                 <img src="./images/lucy.png" alt="logo">
                 <h1>nimbus.co</h1>
             </div>
-            <p id="credit">Illustration by <em><a href="">rottenlittlepuppy</a></em></p>
+            <p id="credit">Illustrations by <em><a href="https://www.instagram.com/rottenlittlepuppy/" target="_blank">rottenlittlepuppy</a></em></p>
         </div>
     </header>
     <main>
@@ -32,34 +32,34 @@
                     <legend>Let's do this!</legend>
                     <ul>
                         <li>
-                            <label for="name">FIRST NAME</label>
-                            <input type="text" id="name">
+                            <label for="name">First name</label>
+                            <input type="text" id="name" minlength="3" maxlength="20" required>
                         </li>
                         <li>
-                            <label for="lastname">LAST NAME</label>
-                            <input type="text" id="lastname">
+                            <label for="lastname">Last name</label>
+                            <input type="text" id="lastname" minlength="3" maxlength="20"required>
                         </li>
                         <li>
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
                         </li>
                         <li>
-                            <label for="phone-number">PHONE NUMBER</label>
-                            <input type="tel" id="phone-number" maxlength="9">
+                            <label for="phone-number">Phone number</label>
+                            <input type="tel" id="phone-number" minlength="9" maxlength="9" required>
                         </li>
                         <li>
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" minlength="6" maxlength="20"required>
                         </li>
                         <li>
-                            <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" minlength="6" maxlength="20" required>
                         </li>
                     </ul>
                 </fieldset>
             </section>
         </form>
-        <div>
+        <div id="button-container">
             <button form="form-container" type="submit">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
